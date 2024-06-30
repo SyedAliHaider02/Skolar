@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TF-IDF Score Calculator</title>
+</head>
+<body>
+    <h1>TF-IDF Score Calculator</h1>
+    <form method="POST" action="/predict">
+        {{ form.hidden_tag() }}
+        <div>
+            {{ form.text.label }}<br>
+            {{ form.text(size=80) }}<br>
+        </div>
+        <div>
+            {{ form.keywords.label }}<br>
+            {{ form.keywords(size=80) }}<br>
+        </div>
+        <div>
+            {{ form.submit() }}
+        </div>
+    </form>
+</body>
+</html>
